@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view>
+
+
+  <view class="gps-position-wrap">
+    <view class="gps-position">
+      中打银座
+    </view>
+    <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
+
+  </view>
+
+
+  <view class="circle-btn-wrap">
+    <view class="btn-sell">
+      <view class="circle-btn">
+        <text class="btn-text" >卖</text>
+      </view>
+
+    </view>
+    <view class="btn-buy">
+
+      <view class="circle-btn">
+        <text class="btn-text" bindtap="goToRubblishList">买</text>
+      </view>
+
+
+
+    </view>
+
+
+
+  </view>
+
+
+
+
+</view>

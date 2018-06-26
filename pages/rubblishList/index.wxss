@@ -1,0 +1,53 @@
+.list-wrap .list-item {
+  font-size: 25rpx;
+  padding-top: 15rpx;
+  margin: 15rpx;
+}
+
+.rubblish-pic {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.pl15 {
+  padding-left: 15rpx;
+}
+
+.easy-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.choice-tag-wrap {
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.choice-tag {
+  flex: 1;
+  font-size: 20rpx;
+  text-align: center;
+  color: green;
+}
+
+.tag-item {
+  width: 90rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  border: 1px solid green;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+
+.is_checked {
+  width: 90rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  border: 1px solid green;
+  border-radius: 10rpx;
+  display: inline-block;
+  color: white;
+  background-color: green;
+}

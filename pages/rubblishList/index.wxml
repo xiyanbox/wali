@@ -1,0 +1,56 @@
+<!-- pages/rubblishList/index.wxml -->
+<view>
+    <view class="choice-tag-wrap">
+        <view class="choice-tag" wx:for="{{tags}}" wx:key="{{id}}">
+            <text class="{{index == id?'is_checked':'tag-item'}}" data-id="{{index}}" bindtap="choicetags">{{item.name}}</text>
+        </view>
+    </view>
+    <view class="list-wrap">
+        <view class="list-item">
+            <i-row>
+                <i-col span="19" i-class="col-class pl15">
+                    <view>
+                        <text class='easy-text'>
+                            一大堆塑料垃圾加一些废钢废铁废塑料还有一些d水平一大堆塑料垃圾加一些废钢废铁废一大堆塑料垃圾加一些废钢废铁废塑料还有一些d水平塑料还有一些d水平
+                        </text>
+                    </view>
+                    <view>
+                        <text>ashdjas凉快圣诞节快乐水电费离开圣诞节福利ashdjas凉快圣诞节快乐水电费离开圣诞节福利</text>
+                    </view>
+                    <view>
+                        <text>2018年06月26日16:36:55</text>
+                    </view>
+                    <view>
+                        <text>企业单</text>
+                        <text>王大翠</text>
+                    </view>
+                </i-col>
+                <i-col span="5" i-class="col-class">
+                    <image class="rubblish-pic" src="../../images/timg.png" mode="scaleToFill" />
+                </i-col>
+            </i-row>
+        </view>
+        <view class="list-item">
+            <i-row>
+                <i-col span="19" i-class="col-class pl15">
+                    <view>
+                        <text>ashdjas凉快圣诞节快乐水电费离开圣诞节福利</text>
+                    </view>
+                    <view>
+                        <text>ashdjas凉快圣诞节快乐水电费离开圣诞节福利ashdjas凉快圣诞节快乐水电费离开圣诞节福利</text>
+                    </view>
+                    <view>
+                        <text>2018年06月26日16:36:55</text>
+                    </view>
+                    <view>
+                        <text>企业单</text>
+                        <text>王大翠</text>
+                    </view>
+                </i-col>
+                <i-col span="5" i-class="col-class">
+                    <image class="rubblish-pic" src="../../images/timg.png" mode="scaleToFill" />
+                </i-col>
+            </i-row>
+        </view>
+    </view>
+</view>

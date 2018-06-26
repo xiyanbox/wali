@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/joinUs/index",
+    "pages/rubblishList/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personCenter/index",
+    "pages/order/index",
+    "pages/appointment/index"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#43C83E",
+    "navigationBarTitleText": "瓦力",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#4A4A4A",
+    "selectedColor": "#7ED321",
+    "backgroundColor": "white",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "./images/maina.png",
+        "selectedIconPath": "./images/mainb.png"
+      },
+      {
+        "pagePath": "pages/appointment/index",
+        "text": "预约",
+        "iconPath": "./images/yuea.png",
+        "selectedIconPath": "./images/yueb.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单",
+        "iconPath": "./images/ordera.png",
+        "selectedIconPath": "./images/orderb.png"
+      },
+      {
+        "pagePath": "pages/personCenter/index",
+        "text": "我的",
+        "iconPath": "./images/mya.png",
+        "selectedIconPath": "./images/myb.png"
+      }
+    ]
+  }
+}
