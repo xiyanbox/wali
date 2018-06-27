@@ -1,0 +1,80 @@
+/* pages/orderUpload/index.wxss */
+.tags-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5rpx;
+  font-size: 30rpx;
+}
+.tags-wrap .time-tags{
+  width: 25%;
+  justify-content:center;
+  text-align: center;
+}
+
+.tags-wrap .time-tags .tags{
+  width: 87%;
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}
+.date-wrap{
+  display: flex;
+}
+.date-item{
+  flex: 1;
+  justify-content:center;
+  text-align: center;
+  font-size: 25rpx;
+}
+.title-text-wrap{
+  color: #888888;
+  font-size: 30rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 15rpx 0 15rpx 15rpx;
+} 
+.title-text-wrap .time-unix{
+  font-size: 25rpx;
+  color: #417505;
+  margin-left: 20rpx;
+
+}
+.rubblish-classify-tag-wrap{
+  display: flex;
+}
+.rubblish-classify-tag-wrap .rubblish-classify-tag{
+  flex: 1;
+  text-align: center;  justify-content:center;
+
+}
+.rubblish-classify-tag-wrap .rubblish-classify-tag .classify-tag{
+  width: 70%;
+}
+.upimg{
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+}
+.upload-wrap {
+  background:#fff;
+  padding:20rpx;
+}
+.logoinfo{
+  position: relative;
+}
+.logoinfo .delete-img{
+  position: absolute;
+  top:0px;right:0px;
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: rgb(243, 141, 141);
+  text-align: center;
+}
+.tec-service{
+  text-align: center;
+  font-size: 20rpx;
+  color: #888888;
+}

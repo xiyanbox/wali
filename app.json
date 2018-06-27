@@ -1,8 +1,10 @@
 {
   "pages": [
+        "pages/index/index",
+        
+        "pages/orderUpload/index",
     "pages/joinUs/index",
     "pages/rubblishList/index",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/personCenter/index",
     "pages/order/index",

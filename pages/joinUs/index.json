@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "回收商加盟"    ,
+    "navigationBarTitleText": "回收商加盟",
     "usingComponents": {
       "i-input": "../../dist/input/index",
       "i-checkbox-group": "../../dist/checkbox-group/index",

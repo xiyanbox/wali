@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "i-tag": "../../dist/tag/index",
+    "i-input": "../../dist/input/index",
+    "i-button": "../../dist/button/index"
+
+
+  },
+  "navigationBarTitleText": "提交废品信息" 
+
+
+}
