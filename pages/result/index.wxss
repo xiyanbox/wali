@@ -1,0 +1,5 @@
+/* pages/result/index.wxss */
+.result-wrap{
+  text-align: center;
+  padding: 150rpx  0  0  0;
+}

@@ -205,6 +205,12 @@ Page({
     this.up();  
   },  
   up: function () {  
+
+
+    wx.navigateTo({
+      url: '../result/index?id=1'
+    })
+    
     var that = this;  
     data = {  
       'user': 'test'
@@ -245,6 +251,9 @@ Page({
         }  
       }  
     })  
+
+
+
   },  
   upimg: function () {  
     var that = this;  

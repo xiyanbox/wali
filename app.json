@@ -1,14 +1,15 @@
 {
   "pages": [
-        "pages/index/index",
-        
-        "pages/orderUpload/index",
+    "pages/index/index",
+    "pages/orderUpload/index",
     "pages/joinUs/index",
     "pages/rubblishList/index",
     "pages/logs/logs",
     "pages/personCenter/index",
     "pages/order/index",
-    "pages/appointment/index"
+    "pages/appointment/index",
+            "pages/result/index"
+            
   ],
   "window": {
     "backgroundColor": "#eeeeee",
