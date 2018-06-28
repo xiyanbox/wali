@@ -3,19 +3,25 @@
   <text class="time-text-main">请选择预约时间</text>
   <text class="time-unix">今天是{{time}}</text>
 </view>
-<view class="date-wrap">
-  <view class="date-item" wx:for="{{dayList}}" wx:key="{{index}}">{{item}}</view>
-</view>
-<view class="tags-wrap">
-  <view class="time-tags" wx:for="{{tags}}" wx:key="{{id}}">
-    <i-tag i-class="tags" bindchange="onChange" checkable="{{true}}" name="{{index}}" data-id="{{index}}" color="{{index ===id?'green':item.color}}" checked="{{index ===id? true:false}}" type="border" style="margin-right:5px;">
-      {{item.name}}
-    </i-tag>
+<i-panel >
+  <view style="padding:20rpx 0rpx;">
+    <view class="date-wrap">
+      <view class="date-item" wx:for="{{dayList}}" wx:key="{{index}}">{{item}}</view>
+    </view>
+    <view class="tags-wrap">
+      <view class="time-tags" wx:for="{{tags}}" wx:key="{{id}}">
+        <i-tag i-class="tags" bindchange="onChange" checkable="{{true}}" name="{{index}}" data-id="{{index}}" color="{{index ===id?'green':item.color}}" checked="{{index ===id? true:false}}" type="border" style="margin-right:5px;">
+          {{item.name}}
+        </i-tag>
+      </view>
+    </view>
   </view>
-</view>
+</i-panel>
 <view class="title-text-wrap">
   <text class="time-text-main">请选择废品类型</text>
 </view>
+<i-panel >
+    <view style="padding: 20rpx 0 ;"> 
 <view class="rubblish-classify-tag-wrap">
   <view class="rubblish-classify-tag" wx:for="{{rubblishClassifyList}}" wx:key="{{index}}">
     <i-tag i-class="classify-tag" bindchange="hello" checkable="{{true}}" name="{{index}}" color="{{item.color}}" checked="{{item.checked}}" type="border" style="margin-right:5px;">
@@ -23,7 +29,12 @@
     </i-tag>
   </view>
 </view>
-<i-panel title="基础用法">
+
+    </view>
+</i-panel>
+
+
+<i-panel >
   <i-input value="{{ value2 }}" type="number" title="联系电话" placeholder="请输入手机号" />
   <i-input value="{{ value3 }}" type="textarea" title="详细地址" placeholder="请输入详细地址(最多50字)" maxlength="50" />
   <i-input value="{{ value5 }}" placeholder="请输入废品描述、温馨提示" />
@@ -31,20 +42,14 @@
 <view class="title-text-wrap">
   <text class="time-text-main">请上传图片</text>
 </view>
-
 <view class="upload-wrap">
-          <image bindtap="upimg" style="width: 120rpx; height: 120rpx; background-color: #eeeeee;" mode='aspectFit' src='../../images/addfile.png' ></image>
+  <image bindtap="upimg" style="width: 120rpx; height: 120rpx; background-color: #eeeeee;" mode='aspectFit' src='../../images/addfile.png'></image>
   <view wx:for="{{img_arr}}" wx:key="index" style="display:inline-block">
     <view class='logoinfo'>
       <image style="width: 120rpx; height: 120rpx; " mode='scaleToFill' src='{{item}}'></image>
-            <view class='delete-img' bindtap='xxx' data-index='{{index}}' >×</view>
-
+      <view class='delete-img' bindtap='xxx' data-index='{{index}}'>×</view>
     </view>
   </view>
 </view>
-
-
-<i-button bind:click="upconfirm" type="success" >{{btnText}}</i-button>
-
-<view class="tec-service"> 本服务由瓦力回收科技公司提供技术支持</view>
-
+<i-button bind:click="upconfirm" type="success">{{btnText}}</i-button>
+<view class="tec-service">本服务由瓦力回收科技公司提供技术支持</view>

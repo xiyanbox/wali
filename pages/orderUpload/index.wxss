@@ -9,10 +9,11 @@
   width: 25%;
   justify-content:center;
   text-align: center;
+  margin: 10rpx 0;
 }
 
 .tags-wrap .time-tags .tags{
-  width: 87%;
+  width: 80%;
   text-align: center;
   height: 40rpx;
   line-height: 40rpx;
