@@ -1,2 +1,15 @@
-<!--pages/personCenter/index.wxml-->
-<text>个人中心</text>
+<!-- pages/personCenter/index.wxml -->
+<view class="person-info-wrap">
+  <i-avatar src="{{userInfo.avatarUrl}}" size="large" shape="circle"></i-avatar>
+  <view>
+    <text style="color:#ffffff">{{userInfo.nickName}}</text>
+  </view>
+  <view>
+    <i-row>
+      <i-col span="8" i-class="col-class"><text class="level">lv23</text><text class="level-name">环保上将</text></i-col>
+      <i-col span="8" i-class="col-class"></i-col>
+      <i-col span="8" i-class="col-class"></i-col>
+    </i-row>
+     <button open-type="getUserInfo">1</button> 
+  </view>
+</view>

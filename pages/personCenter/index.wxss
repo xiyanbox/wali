@@ -1,1 +1,24 @@
 /* pages/personCenter/index.wxss */
+.person-info-wrap{
+  background-color: #43C83E;
+  height: 250rpx;
+  text-align: center;
+}
+.person-info-wrap .level{
+  display: inline-block;
+  width: 50rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background-color: rgb(3, 1, 8);
+  vertical-align: middle;
+
+  margin-right: 15rpx;
+}
+.person-info-wrap .level-name{
+  display: inline-block;
+
+  font-size: 30rpx;
+  color: #fff;
+  vertical-align: middle;
+}

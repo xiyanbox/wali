@@ -1,1 +1,10 @@
-{}
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "i-avatar": "../../dist/avatar/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index"
+
+  }
+
+}
