@@ -1,1 +1,13 @@
 /* pages/appointment/index.wxss */
+.appoint-page{
+  font-size: 28rpx;
+  margin-bottom:20rpx;
+  display:block;
+  }
+.tags-wrap .i-tags{
+  font-size: 22rpx;
+  margin-right: 10rpx;
+
+}.tags-wrap{
+  padding-top: 20rpx;
+}

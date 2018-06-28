@@ -4,7 +4,7 @@
 
   <view class="gps-position-wrap">
     <view class="gps-position">
-      中打银座
+      {{address}}
     </view>
 
   </view>

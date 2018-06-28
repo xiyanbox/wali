@@ -4,6 +4,7 @@ const util = require('../../utils/util.js')
 Page({
 
   data: {
+    btnText:'提交',
     time: null,
     rubblishClassifyList: [{
       id: 1,
@@ -278,6 +279,13 @@ Page({
 
 
   onLoad: function (options) {
+    if(options&&options.id){
+      this.setData({
+        btnText:'预约王大爷',
+        xiaogeId:options.id
+      })
+    }
+    
     var currentTime = new Date();
     var day,
       dayList = [];
@@ -300,8 +308,7 @@ Page({
     })
   },
 
-  onReady: function () {
-
+  onReady: function (e) {
   },
 
   onShow: function () {

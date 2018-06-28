@@ -21,7 +21,11 @@ Page({
   onReady: function () {
   
   },
-
+  tapName(e){
+    wx.navigateTo({
+      url: '../orderUpload/index?id='+ e.currentTarget.id
+    });
+  },
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,2 +1,79 @@
-<!--pages/appointment/index.wxml-->
-<text>yuyue</text>
+<!-- pages/appointment/index.wxml -->
+<i-panel title="" class='appoint-page' id="1" bindtap="tapName">
+  <view style="padding: 15px;">
+    <i-row>
+      <i-col span="4" i-class="col-class">
+        <i-avatar i-class="wali-avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large" shape="square"></i-avatar>
+        <text style='font-size:28rpx;display:block;'>王师傅</text>
+        <view>
+          <i-icon color='gold' type="collection_fill" size='8' />
+          <i-icon size='8' color='gold' type="collection_fill" />
+          <i-icon size='8' color='gold' type="collection_fill" />
+          <i-icon size='8' color='gold' type="collection_fill" />
+          <i-icon size='8' color='gold' type="collection_fill" />
+        </view>
+      </i-col>
+      <i-col span="20" i-class="col-class">
+        <view>
+          <i-row>
+            <i-col span="20" i-class="col-class">
+              <text>成交12323笔</text>
+            </i-col>
+            <i-col span="4" i-class="col-class">
+              <text>＜2km</text>
+            </i-col>
+          </i-row>
+          <i-row>
+            <i-col span="24" i-class="col-class">
+              <text>主营废铁废钢费破烂、铁盘写完旧手盘写完旧手</text>
+            </i-col>
+          </i-row>
+          <view class="tags-wrap">
+            <i-tag class="i-tags" name="标签一" color="green" type="border">忠厚老实</i-tag>
+            <i-tag class="i-tags" name="标签一" color="green" type="border">乐于助人</i-tag>
+            <i-tag class="i-tags" name="标签一" color="green" type="border">帅到掉渣</i-tag>
+          </view>
+        </view>
+      </i-col>
+    </i-row>
+  </view>
+</i-panel>
+<i-panel title="" class='appoint-page'>
+  <view style="padding: 15px;">
+    <i-row>
+      <i-col span="4" i-class="col-class">
+        <i-avatar i-class="wali-avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large" shape="square"></i-avatar>
+        <text style='font-size:28rpx;display:block;'>李狗蛋</text>
+        <view>
+          <i-icon color='gold' type="collection_fill" size='8' />
+          <i-icon size='8' color='gold' type="collection_fill" />
+          <i-icon size='8' color='gold' type="collection_fill" />
+          <i-icon size='8' color='gold' type="collection_fill" />
+          <i-icon size='8' color='gold' type="collection_fill" />
+        </view>
+      </i-col>
+      <i-col span="20" i-class="col-class">
+        <view>
+          <i-row>
+            <i-col span="20" i-class="col-class">
+              <text>成交12323笔</text>
+            </i-col>
+            <i-col span="4" i-class="col-class">
+              <text>＜2km</text>
+            </i-col>
+          </i-row>
+          <i-row>
+            <i-col span="24" i-class="col-class">
+              <text>主营废铁废钢费破烂、铁盘写完旧手盘写完旧手</text>
+            </i-col>
+          </i-row>
+          <view class="tags-wrap">
+            <i-tag class="i-tags" name="标签一" color="green" type="border">忠厚老实</i-tag>
+            <i-tag class="i-tags" name="标签一" color="green" type="border">乐于助人</i-tag>
+            <i-tag class="i-tags" name="标签一" color="green" type="border">帅到掉渣</i-tag>
+          </view>
+        </view>
+      </i-col>
+    </i-row>
+  </view>
+</i-panel>

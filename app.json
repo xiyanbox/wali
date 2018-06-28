@@ -1,5 +1,7 @@
 {
   "pages": [
+        "pages/appointment/index",
+        
     "pages/index/index",
     "pages/orderUpload/index",
     "pages/joinUs/index",
@@ -7,22 +9,21 @@
     "pages/logs/logs",
     "pages/personCenter/index",
     "pages/order/index",
-    "pages/appointment/index",
             "pages/result/index"
             
   ],
   "window": {
-    "backgroundColor": "#eeeeee",
+    "backgroundColor": "#43C83E",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#43C83E",
     "navigationBarTitleText": "瓦力",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "#ffffff"
   },
   "tabBar": {
     "color": "#4A4A4A",
     "selectedColor": "#7ED321",
-    "backgroundColor": "white",
-    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",

@@ -44,7 +44,7 @@
 </view>
 
 
-<i-button bind:click="upconfirm" type="success" >提交</i-button>
+<i-button bind:click="upconfirm" type="success" >{{btnText}}</i-button>
 
 <view class="tec-service"> 本服务由瓦力回收科技公司提供技术支持</view>
 
