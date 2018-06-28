@@ -1,7 +1,6 @@
 {
   "pages": [
-        "pages/appointment/index",
-        
+    "pages/appointment/index",
     "pages/index/index",
     "pages/orderUpload/index",
     "pages/joinUs/index",
@@ -9,8 +8,8 @@
     "pages/logs/logs",
     "pages/personCenter/index",
     "pages/order/index",
-            "pages/result/index"
-            
+    "pages/result/index"
+
   ],
   "window": {
     "backgroundColor": "#43C83E",
@@ -24,8 +23,7 @@
     "selectedColor": "#7ED321",
     "backgroundColor": "#ffffff",
     "borderStyle": "#ffffff",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "主页",
         "iconPath": "./images/maina.png",

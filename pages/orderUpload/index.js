@@ -1,10 +1,8 @@
 const util = require('../../utils/util.js')
 
-
 Page({
-
   data: {
-    btnText:'提交',
+    btnText: '提交',
     time: null,
     rubblishClassifyList: [{
       id: 1,
@@ -131,7 +129,7 @@ Page({
       }
     ],
     current: [],
-    img_arr:[]
+    img_arr: []
 
   },
 
@@ -197,95 +195,94 @@ Page({
       case 6:
         weekDay = '六'
         break;
-      green:
-        break;
+        green:
+          break;
     }
     return this.getFormatDate(month) + '-' + this.getFormatDate(day) + '/周' + weekDay;
   },
-  upconfirm: function () {  
-    this.up();  
-  },  
-  up: function () {  
+  upconfirm: function () {
+    this.up();
+  },
+  up: function () {
 
 
     wx.navigateTo({
       url: '../result/index?id=1'
     })
-    
-    var that = this;  
-    data = {  
+
+    var that = this;
+    data = {
       'user': 'test'
 
-    }  
-    wx.uploadFile({  
-      url: 'pg.php/Aishen/upload_photo',  
-      filePath: that.data.img_arr[i],  
+    }
+    wx.uploadFile({
+      url: 'pg.php/Aishen/upload_photo',
+      filePath: that.data.img_arr[i],
       name: 'image', //文件对应的参数名字(key)  
-      formData: data,  //其它的表单信息  
-      success: function (res) {  
-      }, complete: function (complete) {  
-        console.log(complete)  
-        i++  
-        if (i == that.data.img_arr.length) {  
-          util.request('https://sz800800.cn/pg.php/Aishen/uploade_photo_r', 'post', { 'only_num': only_num }, '正在加载数据', function (res) {  
-            console.log(res)  
-            if (res.data.state == 1) {  
-              wx.showModal({  
-                title: '提示',  
-                content: '提交成功!',  
-                success: function (res) {  
-                  that.onLoad()  
-                  wx.navigateBack({  
-                    delta: 1  
-                  })  
-                }  
-              })  
-            } else {  
-              wx.showModal({  
-                title: '提示',  
-                content: '提交失败,请重新提交!',  
-              })  
-            }  
-          })  
-        } else if (i < that.data.img_arr.length) {//若图片还没有传完，则继续调用函数  
-          that.up()  
-        }  
-      }  
-    })  
-
-
-
-  },  
-  upimg: function () {  
-    var that = this;  
-    if (this.data.img_arr.length < 5) {  
-      wx.chooseImage({  
-        sizeType: ['original', 'compressed'],  
-        success: function (res) {  
-          that.setData({  
-            img_arr: that.data.img_arr.concat(res.tempFilePaths)  
-          })  
-          var num = that.data.img_arr.length  
-        }  
-      })  
-    } else {  
-      wx.showToast({  
-        title: '最多上传5张图片',  
-        icon: 'loading',  
-        duration: 3000  
-      });  
-    }  
-  },  
+      formData: data, //其它的表单信息  
+      success: function (res) {},
+      complete: function (complete) {
+        console.log(complete)
+        i++
+        if (i == that.data.img_arr.length) {
+          util.request('https://sz800800.cn/pg.php/Aishen/uploade_photo_r', 'post', {
+            'only_num': only_num
+          }, '正在加载数据', function (res) {
+            console.log(res)
+            if (res.data.state == 1) {
+              wx.showModal({
+                title: '提示',
+                content: '提交成功!',
+                success: function (res) {
+                  that.onLoad()
+                  wx.navigateBack({
+                    delta: 1
+                  })
+                }
+              })
+            } else {
+              wx.showModal({
+                title: '提示',
+                content: '提交失败,请重新提交!',
+              })
+            }
+          })
+        } else if (i < that.data.img_arr.length) { //若图片还没有传完，则继续调用函数  
+          that.up()
+        }
+      }
+    })
+  },
+  upimg: function () {
+    var that = this;
+    if (this.data.img_arr.length < 5) {
+      wx.chooseImage({
+        sizeType: ['original', 'compressed'],
+        success: function (res) {
+          that.setData({
+            img_arr: that.data.img_arr.concat(res.tempFilePaths)
+          })
+          var num = that.data.img_arr.length
+        }
+      })
+    } else {
+      wx.showToast({
+        title: '最多上传5张图片',
+        icon: 'loading',
+        duration: 3000
+      });
+    }
+  },
 
 
   onLoad: function (options) {
-    if(options&&options.id){
+    if (options && options.id) {
       this.setData({
-        btnText:'预约王大爷',
-        xiaogeId:options.id
+        btnText: '预约王大爷',
+        xiaogeId: options.id
       })
     }
-    
+
     var currentTime = new Date();
     var day,
       dayList = [];
@@ -299,17 +296,13 @@ Page({
     this.setData({
       dayList: dayList
     })
-
-
-
     var time = util.formatTime(currentTime);
     this.setData({
       time: time.substring(0, 10)
     })
   },
 
-  onReady: function (e) {
-  },
+  onReady: function (e) {},
 
   onShow: function () {
 
