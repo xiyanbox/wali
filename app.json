@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/appointment/index",
     "pages/index/index",
     "pages/orderUpload/index",
     "pages/joinUs/index",
@@ -8,8 +7,8 @@
     "pages/logs/logs",
     "pages/personCenter/index",
     "pages/order/index",
-    "pages/result/index"
-
+    "pages/result/index",
+    "pages/appointment/index"
   ],
   "window": {
     "backgroundColor": "#43C83E",
