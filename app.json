@@ -7,6 +7,11 @@
     "pages/logs/logs",
     "pages/personCenter/index",
     "pages/order/index",
+    "pages/order/sell/releasedList/index",
+    "pages/order/sell/soldList/index",
+    "pages/order/purchase/pendingList/index",
+    "pages/order/purchase/receivedList/index",
+    "pages/order/purchase/historyList/index",
     "pages/result/index",
     "pages/appointment/index"
   ],

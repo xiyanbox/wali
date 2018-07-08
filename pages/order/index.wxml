@@ -1,2 +1,26 @@
 <!--pages/order/index.wxml-->
-<text>订单</text>
+<view class='sellList'>
+  <text class='title'>我出售的</text>
+  <navigator class='item' url="./sell/releasedList/index">
+    已发布订单
+    <text class="label">1</text>
+  </navigator>
+  <navigator class='item' url="./sell/soldList/index">
+    已售出订单
+    <text class="label">2</text>
+  </navigator>
+</view>
+<view class='purchaseList'>
+  <text class='title'>我收购的</text>
+  <navigator class='item' url="./purchase/pendingList/index">
+    待处理预约订单
+    <text class="label">3</text>
+  </navigator>
+  <navigator class='item' url="./purchase/receivedList/index">
+    已接收预约订单
+    <text class="label">14</text>
+  </navigator>
+  <navigator class='item' url="./purchase/historyList/index">
+    历史订单
+  </navigator>
+</view>
