@@ -10,6 +10,5 @@
       <i-col span="8" i-class="col-class"></i-col>
       <i-col span="8" i-class="col-class"></i-col>
     </i-row>
-     <button open-type="getUserInfo">1</button> 
   </view>
 </view>
