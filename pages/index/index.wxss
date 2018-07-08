@@ -57,7 +57,6 @@
 }
 
 .circle-btn-wrap .btn-sell .circle-btn{
-  /* margin: 0 auto ; */
   background-color: #ff4d4f;
   width: 280rpx;
   height: 280rpx;
@@ -65,7 +64,6 @@
 
 }
 .circle-btn-wrap .btn-buy .circle-btn{
-  /* margin: 0 auto ; */
   background-color: #52c41a;
   width: 280rpx;
   height: 280rpx;
