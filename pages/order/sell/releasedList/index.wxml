@@ -1,6 +1,17 @@
 <!--pages/order/sell/releasedList/index.wxml-->
-<view>
-  <view>
-      
-  </view>
-</view>
+<i-panel i-class="card">
+  <i-row i-class="content">
+    <i-col span="8" i-class="imgArea">
+      <image mode="aspectFill" src="https://file.iviewui.com/weapp/dist/e5da9fdc97a0b3fb16c115d379820583.jpg"></image>
+    </i-col>
+    <i-col span="16" i-class="textArea">
+      <text class="title">这是一个牛逼哄哄的二维码，你扫一下看看</text>
+      <text class='time'>预约时间：12:00-14:00</text>
+    </i-col>
+  </i-row>
+  <i-row i-class="action">
+    <i-button type="default" size="small">编辑</i-button>
+    <i-button type="default" size="small" bind:click="switchMenu">. . .</i-button>
+  </i-row>
+</i-panel>
+<i-action-sheet visible="{{ showMenu }}" actions="{{ menuOption }}" show-cancel bind:cancel="switchMenu" bind:click="handleClickItem1" />

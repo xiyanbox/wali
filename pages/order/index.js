@@ -5,9 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
-  },
+    showMenu: false,
+    menuOption: [
+      {
+        name: '删除',
+        color: '#ed3f14'
+      }
+    ],
 
+  },
+  switchMenu: function (ev) {
+    console.log(ev)
+    this.setData({
+      showMenu: !this.data.showMenu
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

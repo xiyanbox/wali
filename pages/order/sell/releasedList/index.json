@@ -1,3 +1,11 @@
 {
-  "navigationBarTitleText": "已发布订单"
+  "navigationBarTitleText": "已发布订单",
+  "usingComponents": {
+    "i-panel": "../../../../dist/panel/index",
+    "i-row": "../../../../dist/row/index",
+    "i-col": "../../../../dist/col/index",
+    "i-button": "../../../../dist/button/index",
+    "i-action-sheet": "../../../../dist/action-sheet/index",
+    "i-modal": "../../../../dist/modal/index"
+  }
 }

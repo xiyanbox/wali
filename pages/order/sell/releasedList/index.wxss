@@ -1,1 +1,45 @@
 /* pages/order/sell/releasedList/index.wxss */
+.card{
+  margin: 20rpx 0;
+}
+.content{
+  padding: 20rpx 40rpx;
+}
+.content .imgArea image{
+  display: block;
+  width: 220rpx;
+  height: 180rpx;
+}
+.content .textArea{
+  min-height: 180rpx;
+  padding-left: 20rpx;
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.content .title{
+  font-size: 28rpx;
+  line-height: 32rpx;
+}
+.content .time{
+  width: 100%;
+  /* height: 40rpx; */
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #666;
+  padding-left: 20rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.action{
+   border-top: 1rpx solid #e9eaec;
+   padding: 10rpx 30rpx;
+   text-align: right; 
+}
+.action button{
+  display: inline-block;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 10rpx 20rpx;
+}
